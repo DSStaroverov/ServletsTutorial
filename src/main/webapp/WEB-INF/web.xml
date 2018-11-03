@@ -5,6 +5,16 @@
 <web-app>
   <display-name>Servlets tutorial</display-name>
 
+  <filter>
+    <filter-name>FilterDemo</filter-name>
+    <filter-class>com.tutorial.FilterDemo</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>FilterDemo</filter-name>
+    <url-pattern>/FilterDemo</url-pattern>
+  </filter-mapping>
+
   <servlet>
     <servlet-name>SimpleServlet</servlet-name>
     <servlet-class>com.tutorial.SimpleServlet</servlet-class>
@@ -35,6 +45,16 @@
     <servlet-class>com.tutorial.ErrorDemo</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>SessionTrackingDemo</servlet-name>
+    <servlet-class>com.tutorial.SessionTrackingDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>CookieDemo</servlet-name>
+    <servlet-class>com.tutorial.CookieDemo</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>SimpleServlet</servlet-name>
     <url-pattern>/SimpleServlet</url-pattern>
@@ -63,6 +83,16 @@
   <servlet-mapping>
     <servlet-name>ErrorDemo</servlet-name>
     <url-pattern>/ErrorDemo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SessionTrackingDemo</servlet-name>
+    <url-pattern>/SessionTrackingDemo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>CookieDemo</servlet-name>
+    <url-pattern>/CookieDemo</url-pattern>
   </servlet-mapping>
 
   <error-page>
